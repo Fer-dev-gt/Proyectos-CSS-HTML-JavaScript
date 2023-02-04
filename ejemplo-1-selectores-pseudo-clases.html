@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: papayawhip;
+        }
+
+        div, select{
+            margin: 8px;
+        }
+
+        input:checked + label{
+            color: red;
+        }
+
+        input[type="radio"]:checked{
+            box-shadow: 0 0 0 3px orange;
+        }
+
+        input[type="checkbox"]:checked{
+            box-shadow: 0 0 0 3px hotpink;
+        }
+
+        option:checked{
+            box-shadow: 0 0 0 3px lime;
+            color: red;
+        }
+
+        button {
+            color: #1a73e8;
+        }
+
+        button:active{
+            background-color: #1557ad;
+        }
+        button:hover{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h3>¿Te gusta tomar café ☕️?</h3>
+    <input type="radio" name="my-input" id="yes">
+    <label for="yes">Yes</label>
+
+    <input type="radio" name="my-input" id="no">
+    <label for="no">No</label>
+</div>
+
+<div>
+    <h3>Seleciona tus cafes favoritos</h3>
+    <input type="checkbox" name="my-checkbox" id="opt-in1">
+    <label for="opt-in1">Café Austriaco 🇦🇹</label>
+    <input type="checkbox" name="my-checkbox" id="opt-in2">
+    <label for="opt-in2">Café Colombiano 🇨🇴</label>
+    <input type="checkbox" name="my-checkbox" id="opt-in3">
+    <label for="opt-in3">Café Guatemalteco 🇬🇹!</label>
+    <h3>Escoge tamaño de bolsas</h3>
+</div>
+
+<select name="my-select" id="fruit">
+    <option value="opt1">1 Kg</option>
+    <option value="opt2">2 Kg</option>
+    <option value="opt3">5 Kg</option>
+</select>
+<div>
+    <button>Enviar</button>
+</div>
+    
+</body>
+</html>
